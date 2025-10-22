@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥PAYMENT KAIZYE STORE 🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            background: linear-gradient(90deg, #e94560 0%, #f05945 100%);
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-content {
+            padding: 25px;
+        }
+
+        .payment-method {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .payment-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #e94560;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-title i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .payment-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .payment-detail:last-child {
+            border-bottom: none;
+        }
+
+        .payment-detail .label {
+            font-weight: 500;
+            color: #ccc;
+        }
+
+        .payment-detail .value {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 15px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #e94560 0%, #f05945 100%);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .notification {
+            background: rgba(233, 69, 96, 0.2);
+            border: 1px solid rgba(233, 69, 96, 0.5);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .qris-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qris-content {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            color: #333;
+        }
+
+        .qris-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .close-btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .payment-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡PAYMENT BY KAIZYE OFFICIAL⚡</h1>
+        </div>
+        
+        <div class="payment-content">
+            <div class="payment-method">
+                <div class="payment-title">
+                    <i>💳</i> Metode Pembayaran
+                </div>
+                
+                <div class="payment-detail">
+                    <div class="label">DANA</div>
+                    <div class="value">088229286129</div>
+                </div>
+                
+                <div class="payment-detail">
+                    <div class="label">Nama</div>
+                    <div class="value">RXXX XXX</div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-primary" id="qris-btn">
+                    <i>📱</i> QRIS
+                </button>
+                
+                <button class="btn btn-secondary" onclick="window.open('https://t.me/informasikaizye', '_blank')">
+                    <i>📢</i> Saluran
+                </button>
+                
+                <button class="btn btn-secondary" onclick="window.open('t.me/KAIZYE_STORE', '_blank')">
+                    <i>✉️</i> Kirim Pesan ke Kaizye
+                </button>
+            </div>
+            
+            <div class="notification">
+                <strong>PENTING:</strong> Jika sudah transfer, langsung hubungi @KAIZYE_STORE dan kirim bukti pembayaran.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal QRIS -->
+    <div class="qris-modal" id="qris-modal">
+        <div class="qris-content">
+            <img src="https://files.catbox.moe/iwygx9.jpg" alt="QRIS Payment">
+            <p>Scan QR Code untuk melakukan pembayaran</p>
+            <button class="close-btn" id="close-modal">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan modal QRIS
+        document.getElementById('qris-btn').addEventListener('click', function() {
+            document.getElementById('qris-modal').style.display = 'flex';
+        });
+        
+        // Fungsi untuk menutup modal QRIS
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('qris-modal').style.display = 'none';
+        });
+        
+        // Menutup modal jika mengklik di luar konten modal
+        document.getElementById('qris-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
